@@ -17,9 +17,9 @@ import { ColorSchemeName, Platform, Pressable } from "react-native";
 
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
+import HomeScreen from "../screens/HomeScreen";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import TabOneScreen from "../screens/TabOneScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
 import {
   RootStackParamList,
@@ -149,7 +149,7 @@ function HomeStackNavigator() {
     <HomeStack.Navigator>
       <HomeStack.Screen
         name="HomeStack"
-        component={TabOneScreen}
+        component={HomeScreen}
         options={{
           headerShown: false,
         }}
