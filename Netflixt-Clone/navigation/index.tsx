@@ -87,7 +87,7 @@ function BottomTabNavigator() {
     >
       <BottomTab.Screen
         name="Home"
-        component={TabOneScreen}
+        component={HomeStackNavigator}
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (
@@ -97,9 +97,9 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Comming_Soon"
-        component={TabTwoScreen}
+        component={SearchStackNavigator}
         options={{
-          title: "Comming_Soon",
+          title: "Comming  Soon",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="play-box-multiple"
@@ -111,7 +111,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Search"
-        component={TabTwoScreen}
+        component={SearchStackNavigator}
         options={{
           title: "Search",
           tabBarIcon: ({ color }) => (
@@ -127,16 +127,12 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Download"
-        component={TabTwoScreen}
+        component={SearchStackNavigator}
         options={{
           title: "Download",
           tabBarIcon: ({ color }) => (
             <Ionicons
-              name={
-                Platform.OS === "ios"
-                  ? "ios-download"
-                  : "md-download"
-              }
+              name={Platform.OS === "ios" ? "ios-download" : "md-download"}
               color={color}
               size={24}
             />
@@ -144,6 +140,36 @@ function BottomTabNavigator() {
         }}
       />
     </BottomTab.Navigator>
+  );
+}
+
+const HomeStack = createNativeStackNavigator();
+function HomeStackNavigator() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="HomeStack"
+        component={TabOneScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+    </HomeStack.Navigator>
+  );
+}
+
+const SearchStack = createNativeStackNavigator();
+function SearchStackNavigator() {
+  return (
+    <SearchStack.Navigator>
+      <SearchStack.Screen
+        name="SearchStack"
+        component={TabTwoScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+    </SearchStack.Navigator>
   );
 }
 
