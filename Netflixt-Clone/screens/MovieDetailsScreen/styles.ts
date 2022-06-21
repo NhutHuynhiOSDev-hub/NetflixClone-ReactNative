@@ -83,6 +83,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 5,
   },
+  picker: {
+    color: "white",
+  },
 });
 
 export default styles;

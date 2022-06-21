@@ -10,14 +10,36 @@ import {
   MaterialIcons,
 } from "@expo/vector-icons";
 import EpisodeItem from "../../components/EpisodeItem";
+import { useState } from "react";
+import { Picker } from "@react-native-picker/picker";
 
 const firstSeasion = movie.seasons.items[0];
 const firstEpisode = firstSeasion.episodes.items[0];
 
 const MovieDetailsScreen = () => {
+  const [selectedSesion, setSelectedSesion] = useState("JAVA");
+  const seasonNames = movie.seasons.items.map((searson) => searson.name);
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={{ uri: firstEpisode.poster }} />
+
+      {/* <Picker
+        selectedValue={selectedSesion}
+        onValueChange={(item, index) => {
+          setSelectedSesion(item);
+        }}
+        style={styles.picker}
+      >
+        {seasonNames.map((name) => (
+          <Picker.Item label={name} value={name} key={name} />
+        ))}
+      </Picker> */}
+
+      <Picker selectedValue={"s"} onValueChange={(itemValue, itemIndex) => {}}>
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
 
       <FlatList
         data={firstSeasion.episodes.items}
