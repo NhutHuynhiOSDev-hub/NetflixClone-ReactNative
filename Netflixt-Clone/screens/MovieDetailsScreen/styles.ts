@@ -4,7 +4,7 @@ import Colors from "../../constants/Colors";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: 12,
   },
   infoContainer: {
     flexDirection: "row",
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   btnDownload: {
-    backgroundColor: "darkGrey",
+    backgroundColor: "grey",
     alignItems: "center",
     borderRadius: 5,
     padding: 5,
@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
   btnMenuContainer: {
     flexDirection: "row",
     alignItems: "center",
-  
   },
   btnMenu: {
     padding: 10,
@@ -80,7 +79,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   btnMenuText: {
-    color: "darkgrey",
+    color: "grey",
     fontSize: 12,
     marginTop: 5,
   },
