@@ -153,7 +153,7 @@ function HomeStackNavigator() {
         name="DetailsScreen"
         component={MovieDetailsScreen}
         options={{
-          title: "",
+          headerShown: false,
         }}
       />
       <HomeStack.Screen
