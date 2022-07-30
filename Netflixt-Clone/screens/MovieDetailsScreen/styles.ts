@@ -1,3 +1,4 @@
+import { setStatusBarStyle } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import Colors from "../../constants/Colors";
 
@@ -82,9 +83,6 @@ const styles = StyleSheet.create({
     color: "grey",
     fontSize: 12,
     marginTop: 5,
-  },
-  picker: {
-    color: "white",
   },
 });
 
