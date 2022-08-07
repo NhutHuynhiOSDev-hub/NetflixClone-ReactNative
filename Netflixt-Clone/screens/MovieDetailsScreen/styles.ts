@@ -1,6 +1,4 @@
-import { setStatusBarStyle } from "expo-status-bar";
 import { StyleSheet } from "react-native";
-import Colors from "../../constants/Colors";
 
 const styles = StyleSheet.create({
   container: {
@@ -14,11 +12,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-  },
-  image: {
-    width: "100%",
-    aspectRatio: 16 / 9,
-    resizeMode: "cover",
   },
   match: {
     color: "#59d467",

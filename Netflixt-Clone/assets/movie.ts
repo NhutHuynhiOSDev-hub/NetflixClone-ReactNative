@@ -22,7 +22,8 @@ export default {
                 "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep0.jpg",
               duration: "1h 21m",
               plot: "When Harvey's promotion requires him to recruit and hire a graduate of Harvard Law, he chooses Mike Ross. But Mike doesn't actualy have a law degree",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+              video:
+                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
             },
             {
               id: "episode2",
@@ -31,25 +32,8 @@ export default {
                 "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep1.jpg",
               duration: "43m",
               plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-            },
-            {
-              id: "episode3",
-              title: "2. Errors and Omissions",
-              poster:
-                "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep1.jpg",
-              duration: "43m",
-              plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-            },
-            {
-              id: "episode4",
-              title: "2. Errors and Omissions",
-              poster:
-                "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep1.jpg",
-              duration: "43m",
-              plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+              video:
+                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
             },
           ],
         },
@@ -66,7 +50,8 @@ export default {
                 "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep3.jpg",
               duration: "41m",
               plot: "When Harvey's promotion requires him to recruit and hire a graduate of Harvard Law, he chooses Mike Ross. But Mike doesn't actualy have a law degree",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+              video:
+                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
             },
             {
               id: "episode6",
@@ -75,34 +60,8 @@ export default {
                 "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep0.jpg",
               duration: "49m",
               plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-            },
-            {
-              id: "episode7",
-              title: "2. Are you subscribed?",
-              poster:
-                "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep0.jpg",
-              duration: "49m",
-              plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-            },
-            {
-              id: "episode8",
-              title: "2. Are you subscribed?",
-              poster:
-                "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep0.jpg",
-              duration: "49m",
-              plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-            },
-            {
-              id: "episode9",
-              title: "2. Are you subscribed?",
-              poster:
-                "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/ep0.jpg",
-              duration: "49m",
-              plot: "An open-and-shut case becomes anything but when Harvey is accused of an inappropriate dalliance with a married woman.",
-              video: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+              video:
+                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
             },
           ],
         },

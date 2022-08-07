@@ -1,11 +1,4 @@
-import {
-  Alert,
-  FlatList,
-  Image,
-  Platform,
-  Pressable,
-  View,
-} from "react-native";
+import { FlatList, Platform, Pressable, View } from "react-native";
 import { Text } from "../../components/Themed";
 import styles from "./styles";
 import DropDownPicker from "react-native-dropdown-picker";
@@ -18,7 +11,8 @@ import {
   MaterialIcons,
 } from "@expo/vector-icons";
 import EpisodeItem from "../../components/EpisodeItem";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import VideoPlayer from "../../components/VideoPlayer";
 
 const firstSeasion = movie.seasons.items[0];
 const firstEpisode = firstSeasion.episodes.items[0];
@@ -34,18 +28,22 @@ const MovieDetailsScreen = () => {
   const [dropdownItems, setDropdownItems] = useState(seasonNames);
   const [dropdownValues, setDropdownValue] = useState(seasonNames[0]);
   const [currentSeason, setCurrentSeason] = useState(firstSeasion);
-
-  useEffect(() => {
-    console.log("DROPDOWN VALUE: ", dropdownValues);
-  }, [dropdownValues]);
+  const [currentEpisode, setCurrentEpisode] = useState(firstEpisode);
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={{ uri: firstEpisode.poster }} />
+      <VideoPlayer episode={currentEpisode} />
 
       <FlatList
         data={currentSeason.episodes.items}
-        renderItem={({ item }) => <EpisodeItem episodes={item} />}
+        renderItem={({ item }) => (
+          <EpisodeItem
+            episode={item}
+            onPress={(episode) => {
+              setCurrentEpisode(episode);
+            }}
+          />
+        )}
         ListHeaderComponent={
           <View>
             <Text style={styles.title}>{movie.title}</Text>
